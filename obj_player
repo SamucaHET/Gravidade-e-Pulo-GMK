@@ -1,0 +1,4 @@
+// Configurações de salto e gravidade
+gravity = 0.5; // Valor da gravidade
+jump_speed = -10; // Força do pulo
+vertical_speed = 0; // Velocidade vertical inicial
