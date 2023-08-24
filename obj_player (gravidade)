@@ -1,0 +1,13 @@
+// Aplicar gravidade
+vertical_speed += gravity;
+
+// Verificar se o jogador está no chão (substitua "obj_ground" pelo nome do objeto do chão)
+if (place_meeting(x, y + 1, obj_ground)) {
+    vertical_speed = 0; // Resetar a velocidade vertical ao tocar o chão
+    if (keyboard_check_pressed(vk_space)) {
+        vertical_speed = jump_speed; // Iniciar um pulo quando a tecla de espaço é pressionada
+    }
+}
+
+// Movimentar verticalmente
+y += vertical_speed;
